@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.logoKutun{
+    width: 100px;
+    
+}
+body{
+    background-color: #E3D5CA;
+    font-family: 'Prata', serif;
+    margin: 0%;
+}
+footer{
+    background-color: #D6CCC2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow:0px -10px 15px 5px rgba(0,0,0,0.41)
+}
+
+
+iframe{
+    margin-left: 21%;
+}
+ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    border: gray;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+    transition: all 0.2s ease;
+    font-style: normal;
+    font-size: 27px;
+    white-space: nowrap;
+
+}
+a:hover{
+    opacity: 1;
+    color: black;
+}
+li{
+    margin: 0 60px;
+}
+main{
+    color: black;
+    margin: 30px;
+}
+div{
+    font-style: oblique;
+    font-size: medium;
+}
+.contenedorGrid{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas:
+    "parrafoIzq imagen parrafoDer";      
+}
+.contenedorGridImagenes{
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 33% 33% 33%;
+    gap: 20px;
+}
+.contenedorFlex{
+    margin-top: 25PX;
+    display: flex;
+    flex-direction: column;
+}
+.marcoImagen{
+    overflow: hidden;
+}
+.imagenGrilla{ 
+height: 300px;
+width: 100%;
+object-fit: cover;
+transition: transform .2s;
+}
+
+.imagenGrilla:hover{
+    transform: scale(1.5);
+}
+.primerParrafo{
+    grid-area: parrafoIzq;
+}
+.imagenYerba{
+    grid-area: imagen;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.segundoParrafo{
+    grid-area: parrafoDer;
+}
+p{
+    grid-area: parrafo;
+    padding: 20px;
+    font-size: larger;
+}
+.dulcesYMermeladas{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bannerKutun{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+}
+.logoDeInstagram{
+    width: 80px;
+    height: 80px;
+    filter: invert(100%);
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+form{
+    font-size: larger;
+    height: 50vh;
+}
+textarea,input{
+    border: double black 3px; 
+}
+nav{
+    background-color: #edede9;
+    box-shadow: 0px 13px 29px 5px rgba(0,0,0,0.35);
+    
+}
+
+@media screen and (max-width: 767px){
+
+footer{
+    flex-direction: column;
+}
+iframe{ 
+margin-left: 0%;
+width: 100%;
+}
+main{
+text-align: center;
+}
+.contenedorGridImagenes{
+grid-template-columns: 50% 50%;
+grid-template-rows: auto;
+gap: 5px;
+}
+.logoKutun{
+width: 60px;
+}
+.contenedorGrid{
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto 33%;
+    grid-template-areas:
+    "parrafoIzq"
+     "imagen"
+     "parrafoDer";  
+   
+}
+
+    
+}
